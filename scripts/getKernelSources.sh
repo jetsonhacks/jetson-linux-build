@@ -97,7 +97,7 @@ DISTRIBUTION=$(lsb_release -is)
 # Needs to be lower case
 DISTRIBUTION="$(echo $DISTRIBUTION | tr '[A-Z]' '[a-z]')"
 OS_RELEASE=$(lsb_release -rs)
-MODULE_SYMVERS_URL=/usr/src/linux-headers-${KERNEL_VERSION}-${DISTRIBUTION}${OS_RELEASE}_$(uname -m)/kernel-${KERNEL_RELEASE}/Module.symvers
+MODULE_SYMVERS_URL=${SOURCE_TARGET}"linux-headers-"${KERNEL_VERSION}-${DISTRIBUTION}${OS_RELEASE}_$(uname -m)/kernel-${KERNEL_RELEASE}/Module.symvers
 
 echo $MODULE_SYMVERS_URL
 
@@ -105,7 +105,6 @@ echo $MODULE_SYMVERS_URL
 cd "$SOURCE_TARGET"
 echo "$PWD"
 # L4T Driver Package (BSP) Sources
-# Jetson TX1, Nano and Nano 2GB all have the same source files
 wget -N "$SOURCE_URL"
 
 # l4t-sources is a tbz2 file
