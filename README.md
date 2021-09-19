@@ -81,6 +81,8 @@ One thing that the scripts are useful for is building external kernel modules. P
 
 ## Release Notes
 
+Special thanks to Raffaello Bonghi (https://github.com/rbonghi) for jetson_variable script.
+
 ### September, 2021
 * Initial Release
 * Unification of build methods across Jetson platform
