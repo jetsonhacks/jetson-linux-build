@@ -83,6 +83,9 @@ One thing that the scripts are useful for is building external kernel modules. P
 
 Special thanks to Raffaello Bonghi (https://github.com/rbonghi) for jetson_variable script.
 
+### June, 2022
+* Add L4T 32.7.1, L4T 32.7.2
+
 ### September, 2021
 * Initial Release
 * Unification of build methods across Jetson platform
