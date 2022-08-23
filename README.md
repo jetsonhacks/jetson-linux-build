@@ -1,6 +1,8 @@
 ## jetson-linux-build
 Tools to build the Linux kernel and modules on board Jetson Developer Kits
 
+Note: Currently this is for JetPack versions 4 and earlier - Working on upgrading to JetPack 5
+
 This is a tool for meant for intermediate+ users. Please read this entire document before proceeding.
 
 This repository contains convenience scripts to:
