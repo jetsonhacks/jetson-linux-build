@@ -85,6 +85,11 @@ One thing that the scripts are useful for is building external kernel modules. P
 
 Special thanks to Raffaello Bonghi (https://github.com/rbonghi) for jetson_variable script.
 
+### November, 2022
+* Add L4T 35.0.1
+* Initial Orin support
+* Fix issue with Jetson Nano (t186) not working correctly
+
 ### June, 2022
 * Add L4T 32.7.1, L4T 32.7.2
 
