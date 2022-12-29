@@ -6,6 +6,8 @@
 # Table of the URLs to Kernel Sources for Jetson Nano, Nano 2GB and TX1
 # L4T Driver Package [BSP] Sources - Code 210
 declare -A source_url_list_210=( 
+  
+  ["32.7.3"]="https://developer.nvidia.com/downloads/remack-sdksjetpack-463r32releasev73sourcest210publicsourcestbz2"
   ["32.7.2"]="https://developer.nvidia.com/embedded/l4t/r32_release_v7.2/sources/t210/public_sources.tbz2"
   ["32.7.1"]="https://developer.nvidia.com/embedded/l4t/r32_release_v7.1/sources/t210/public_sources.tbz2"
   ["32.6.1"]="https://developer.nvidia.com/embedded/l4t/r32_release_v6.1/sources/t210/public_sources.tbz2"
@@ -20,6 +22,7 @@ declare -A source_url_list_210=(
 # L4T Driver Package [BSP] Sources - Code 186
 declare -A source_url_list_186=( 
   ["35.1.0"]="https://developer.nvidia.com/embedded/l4t/r35_release_v1.0/sources/public_sources.tbz2"
+  ["32.7.3"]="https://developer.nvidia.com/downloads/remack-sdksjetpack-463r32releasev73sourcest186publicsourcestbz2"
   ["32.7.2"]="https://developer.nvidia.com/embedded/l4t/r32_release_v7.2/sources/t186/public_sources.tbz2"
   ["32.7.1"]="https://developer.nvidia.com/embedded/l4t/r32_release_v7.1/sources/t186/public_sources.tbz2"
   ["32.6.1"]="https://developer.nvidia.com/embedded/l4t/r32_release_v6.1/sources/t186/public_sources.tbz2"
@@ -110,7 +113,7 @@ echo $MODULE_SYMVERS_URL
 cd "$SOURCE_TARGET"
 echo "$PWD"
 # L4T Driver Package (BSP) Sources
-wget -N "$SOURCE_URL"
+wget -N "$SOURCE_URL" -O public_sources.tbz2
 
 # l4t-sources is a tbz2 file
 tar -xvf public_sources.tbz2  Linux_for_Tegra/source/public/kernel_src.tbz2 --strip-components=3
