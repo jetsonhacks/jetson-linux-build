@@ -68,7 +68,7 @@ else
   esac
 fi
     
-if [ BOARD_ID = "" ] ; then
+if [ "$BOARD_ID" = "" ] ; then
   echo "Unrecongized board"
   exit 1
 fi
@@ -86,7 +86,7 @@ case ${BOARD_ID} in
     exit 1
 esac
 
-if [ $SOURCE_URL = "" ] ; then
+if [ "$SOURCE_URL" = "" ] ; then
   echo "Unable to find source files on developer.nvidia.com"
   echo "L4T $JETSON_L4T"
   exit 1
