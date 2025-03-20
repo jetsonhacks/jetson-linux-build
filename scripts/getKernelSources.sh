@@ -28,6 +28,7 @@ declare -A source_url_list_186=(
   ["35.3.1"]="https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v3.1/sources/public_sources.tbz2"
   ["35.2.1"]="https://developer.download.nvidia.com/embedded/L4T/r35_Release_v2.1/sources/public_sources.tbz2"
   ["35.1.0"]="https://developer.nvidia.com/embedded/l4t/r35_release_v1.0/sources/public_sources.tbz2"
+  ["32.7.5"]="https://developer.nvidia.com/downloads/embedded/l4t/r32_release_v7.5/sources/t186/public_sources.tbz2"
   ["32.7.4"]="https://developer.nvidia.com/downloads/embedded/l4t/r32_release_v7.4/sources/t186/public_sources.tbz2"
   ["32.7.3"]="https://developer.nvidia.com/downloads/remack-sdksjetpack-463r32releasev73sourcest186publicsourcestbz2"
   ["32.7.2"]="https://developer.nvidia.com/embedded/l4t/r32_release_v7.2/sources/t186/public_sources.tbz2"
@@ -68,7 +69,7 @@ else
   esac
 fi
     
-if [ BOARD_ID = "" ] ; then
+if [ "$BOARD_ID" = "" ] ; then
   echo "Unrecongized board"
   exit 1
 fi
@@ -86,7 +87,7 @@ case ${BOARD_ID} in
     exit 1
 esac
 
-if [ $SOURCE_URL = "" ] ; then
+if [ "$SOURCE_URL" = "" ] ; then
   echo "Unable to find source files on developer.nvidia.com"
   echo "L4T $JETSON_L4T"
   exit 1
