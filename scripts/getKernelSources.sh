@@ -39,7 +39,8 @@ declare -A source_url_list_186=(
   ["32.5.0"]="https://developer.nvidia.com/embedded/L4T/r32_Release_v5.0/sources/T186/public_sources.tbz2"
   ["32.4.4"]="https://developer.nvidia.com/embedded/L4T/r32_Release_v4.4/r32_Release_v4.4-GMC3/Sources/T186/public_sources.tbz2"
   ["32.4.3"]="https://developer.nvidia.com/embedded/L4T/r32_Release_v4.3/Sources/T186/public_sources.tbz2"
-  ["32.4.2"]="https://developer.nvidia.com/embedded/L4T/r32_Release_v4.2/Sources/T186/public_sources.tbz2" )
+  ["32.4.2"]="https://developer.nvidia.com/embedded/L4T/r32_Release_v4.2/Sources/T186/public_sources.tbz2"
+  ["34.1.0"]="https://developer.nvidia.com/embedded/l4t/r34_release_v1.0/sources/public_sources.tbz2" )
 
 # Get the Board ID ; must be t210ref or t186 ref
 BOARD_ID=""
